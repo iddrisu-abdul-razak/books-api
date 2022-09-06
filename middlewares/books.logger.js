@@ -1,7 +1,6 @@
 function logger(req, res, next){
-console.log( `${req.meyhod} ${req.originalurl} ${req.statusCode}`);
+    console.log(`${req.method} ${req.orginalurl} ${req.statusCode}`);
 
-next();
-
+    next();
 }
-module.exports.logger
+module.exports=logger
